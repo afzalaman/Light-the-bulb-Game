@@ -1,0 +1,113 @@
+body{
+    background-image: url("bulbs.jpg");
+    background-size: cover;
+
+}
+
+.game-page{
+    display: none;
+}
+.custom-box{
+    display: none;
+}
+
+.game-Table{
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    width: 50%;
+    text-align: center;
+}
+
+td{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 35px;
+}
+
+table, tr, td{
+    border:4px solid rgb(117, 116, 116);
+    border-collapse: collapse;
+
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 500px;
+}
+
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-yellow{
+    transition: background 2s;
+    background-color: yellow;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+
+button{
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: x-large;
+    font-family: Serif;
+    border-radius: 10px;
+    background-color: rgb(234, 189, 73)
+}
+
+#timer{
+    width: 305px;
+}
+
+#nameD{
+    width: 305px;
+}
+#mapName{
+    width: 305px;
+}
+
+#resultButton{
+    width: 305px;
+    height: 100px;
+    font-size: 50px;
+}
+
+.main-page {
+    width: 100%;
+    text-align: center;
+
+}
+.custom-box{
+    width: 100%;
+    text-align: center;
+}
+
+
+#descriptionTitle{
+    text-align: center;
+    color:black;
+    background-color: rgb(234, 189, 73)
+}
+
+#hour, #minute,#second,#millisecond {
+    color: green;
+    display: inline-block;
+    width: 30px;
+}
