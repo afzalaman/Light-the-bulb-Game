@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULBS GAME</title>
+</head>
+<body>
+    <div class="main-page">
+            <div id = "selection-box">
+                <form>
+                    <div>
+                        <h2 id = "gameTitle">BULBS GAME</h2>
+                    </div>
+                    <div>
+                        <label for="name">Name: </label>
+                        <input id="name" type = "text">
+                    </div>
+                
+                    <div>
+                        <label for="boards">Select a board: </label>
+                        <select name = "matrixes" id="boards">
+                        <option value = "Easy-7x7">Easy-7x7</option>
+                        <option value = "Moderate-7x7">Moderate-7x7</option>
+                        <option value = "Pro-10x10">Pro-10x10</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button id = "start-button" type = "button"> Start </button>
+                        <button id = "load-button" type = "button"> Load Saved </button>
+                        <button id = "custom-button" type = "button"> Custom Map </button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div id = "description">
+                <h2 id = "descriptionTitle"> Game Description</h2>
+                <p>Once upon a time, King Unnamed of Nowhereland was both smiling and crying at the same time. He was smiling because his enormous brand-new palace with many spacious rooms and corridors has just been finished. He is also crying as these rooms need to be illuminated and kept warm, but the ongoing increase of utility costs affect him as well. So now it's time to think about the placement of the palace's light bulbs. We need to place them so that everything is properly lit, but we cannot install any unnecessary bulbs.
+                </p>
+                <ul>
+                    <li>The king's palace has rooms with square shaped floors that consist of black and white tiles only.</li>
+                    <li>Light bulbs can only be placed above white tiles.</li>
+                    <li>The light from the light bulbs does not spread diagonally, only straight along the given row and column.</li>
+                    <li>The black tiles have objects placed on them, which block the propagation of light.</li>
+                    <li>Black cells can optionally contain an integer from 0 to 4. This indicates how many adjacent (bottom, top, right, left) cells contain light bulbs. If there is such a number, the puzzle must be solved accordingly!</li>
+                    <li>Two light bulbs can NEVER illuminate each other!</li>
+                    <li>The goal of the game is to place the light bulbs so that all the white tiles are illuminated.</li>
+                </ul>
+            </div>
+    </div>
+
+   
+<div class = "custom-box">
+    <form>
+        <div>
+            <label for="Cname">Name: </label>
+            <input id="Cname" placeholder="insert your name" type = "text">
+        </div>
+        <div>
+            <label for="size">Size: </label>
+            <input id="size" placeholder="6" type = "text">
+        </div>
+        <div>
+            <label for="blackIndex">Index of Black: </label>
+            <input id="blackIndex" placeholder="12,23,35,44,42" type = "text">
+        </div>
+        <div>
+            <label for="blackInner">Number inside Black: </label>
+            <input id="blackInner" placeholder ="12-3,35-2,44-1" type = "text">
+        </div>
+        <div>
+            <button id = "startCustom-button" type = "button"> Start </button>
+        </div>
+    </form>
+    <div id = "descriptionCustom">
+        <h2 id = "descriptionTitle"> Description for Custom Map </h2>
+        <ul>
+            <li>Enter the Player's Name in the "Name" field.</li>
+            <li>Enter the size of map. For example:- "6"</li>
+            <li>Enter the indeces(starting from 0) where you want to put the black tiles (separated by a comma ","). For example :- "12,23,35,44,42"</li>
+            <li>Enter the indeces and inner value of the black tile formated as "(indeces)-(inner number)" For example :- "12-3,35-2,44-1"</li>
+        </ul>
+    </div>
+</div>
+
+
+    <div class = "game-page">
+        <div>
+            <h2>ScoreBoard</h2>
+            <button id = "timer">Time :- <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span></button>
+        </div>
+        <div>
+            <button id = "nameD">Player Name: </button>
+        </div>
+        <div>
+            <button id = "mapName"></button>
+        </div>
+        <div class = "game-Table">
+            <table id = "table">
+            </table>
+        </div>
+       
+        <div>
+            <button id = "resultButton"></button>
+        </div>
+        <div>
+        <button id = "restartButton"> Restart </button>
+        <button id = "saveButton"> Save </button>
+        </div>
+        <div>
+        <button id = "backButton"> <- Back </button>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
